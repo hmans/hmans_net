@@ -28,8 +28,11 @@ module Schreihals
 
     helpers do
       def partial(thing, options = {})
-        type = thing.class.to_s.demodulize.underscore
-        haml :"partials/_#{type}", :locals => { type.to_sym => thing }
+        name = case thing
+          when String then thing
+          else thing.class.to_s.demodulize.underscore
+        end
+        haml :"partials/_#{name}", :locals => { name.to_sym => thing }
       end
 
       def link_to(title, thing)
