@@ -4,3 +4,7 @@ source 'https://rubygems.org'
 gem 'schnitzelstyle', :path => './vendor/schnitzelstyle'
 
 gem 'schreihals', :path => './vendor/schreihals'
+
+group :development do
+  gem 'thin'
+end
