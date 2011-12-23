@@ -1,6 +1,0 @@
-[submodule "vendor/schnitzelstyle"]
-	path = vendor/schnitzelstyle
-	url = git@github.com:hmans/schnitzelstyle.git
-[submodule "vendor/schreihals"]
-	path = vendor/schreihals
-	url = git@github.com:hmans/schreihals.git
