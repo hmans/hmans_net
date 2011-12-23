@@ -10,6 +10,6 @@ Seit ein paar Jahren gibt es speziell für _Hacker_ ein paar schöne Alternative
 
 Deswegen folgt nun mein eigener Beitrag zur aufregenden Blog-Engine-Community, frei nach dem Motto: jeder Entwickler sollte irgendwo eine Blog-Engine maintainen. Sie heißt `schreihals` und wird natürlich alsbald veröffentlicht, voll Open Source und so. (Wer sich schonmal reinschauen will, findet den Code für `schreihals` und diese Site [bereits auf Github](https://github.com/hmans/hmans_net).)
 
-Und das hier ist der erste Post. Alles, was vorher auf `hmans.net` zu sehen war, ist jetzt erst einmal futsch, denn es liegt auf Tumblr, und die bieten keine einfache Exportmöglichkeit an. Was übrigens einer der Gründe ist, warum ich es nicht mehr so gerne nutze.
+Und das hier ist der erste Post. Alles, was vorher auf `hmans.net` zu sehen war, ist jetzt erst einmal futsch (na gut, ich habe es [hier geparkt](http://tumblr.hmans.net/)), denn es liegt auf Tumblr, und die bieten keine einfache Exportmöglichkeit an. Was übrigens einer der Gründe ist, warum ich es nicht mehr so gerne nutze.
 
 So. Onwards and upwards!
