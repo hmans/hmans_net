@@ -28,12 +28,13 @@ module Schreihals
     use Rack::Static, :urls => ["/media"], :root => "public"
 
     helpers do
-      def partial(thing, options = {})
+      def partial(thing, locals = {})
         name = case thing
           when String then thing
           else thing.class.to_s.demodulize.underscore
         end
-        haml :"partials/_#{name}", :locals => { name.to_sym => thing }
+
+        haml :"partials/_#{name}", :locals => { name.to_sym => thing }.merge(locals)
       end
 
       def link_to(title, thing)
