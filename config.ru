@@ -1,3 +1,7 @@
+require 'rubygems'
+require 'bundler'
+Bundler.require
+
 require 'schreihals'
 
 class MyBlog < Schreihals::App

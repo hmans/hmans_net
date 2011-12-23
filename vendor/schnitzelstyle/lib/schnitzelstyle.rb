@@ -1,4 +1,5 @@
 require "schnitzelstyle/version"
+require "sass"
 
 # Add our stylesheets to SASS load path
 #
