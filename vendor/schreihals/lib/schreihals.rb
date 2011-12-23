@@ -15,7 +15,7 @@ module Schreihals
     self.directory = 'posts'
 
     def to_url
-      "/posts/#{slug}/"
+      "/#{year}/#{month}/#{day}/#{slug}/"
     end
   end
 
@@ -47,7 +47,7 @@ module Schreihals
       haml :index
     end
 
-    get '/posts/:slug/?' do |slug|
+    get '/:year/:month/:day/:slug/?' do |year, month, day, slug|
       if @post = Post.where(:slug => slug).first
         haml :post
       else
