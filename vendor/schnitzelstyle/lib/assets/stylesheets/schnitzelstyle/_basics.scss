@@ -2,6 +2,8 @@
   body {
     background-color: $color-page-background;
     color: $color-text;
+    font: $font-default;
+    padding: 20px;
   }
 
   a {
@@ -12,12 +14,21 @@
     font-weight: bold;
   }
 
-  nav {
-    background-color: black;
-    color: white;
+  #container {
+    @include schnitzel-container;
   }
 
-  footer {
+  #container>header {
+    font: $font-header;
+    margin-bottom: 2em;
+
+    nav {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  #container>footer {
     margin-top: 4em;
     color: #999;
     text-align: right;
@@ -25,41 +36,68 @@
 
   *:first-child { margin-top: 0 !important }
   *:last-child { margin-bottom: 0 !important }
-}
 
-@mixin schnitzel-text {
-  p, dl {
-    margin: 1em 0;
-  }
-
-  p {
-  }
-
-  a {
-    color: $color-text;
-    text-decoration: none;
-    border-bottom: 2px solid #fc9;
-
-    &:hover {
-      color: #000;
+  section {
+    p, dl, li {
+      margin: 1em 0;
+      line-height: 23px;
     }
-  }
 
-  ul {
-    list-style-type: square;
-    li { margin: 0 0 1em 1.2em }
-  }
+    a {
+      color: $color-text;
+      text-decoration: none;
+      border-bottom: 2px solid #fc9;
 
-  em {
-    font-style: italic;
-    color: #666;
-  }
+      &:hover {
+        color: #000;
+      }
+    }
 
-  code {
-    font: $font-monospaced;
-    background-color: #ddd;
-    color: #666;
-    padding: 0.1em 0.5em;
+    ul {
+      list-style-type: square;
+      li { margin: 0 0 1em 1.2em }
+    }
+
+    em {
+      font-style: italic;
+      color: #666;
+    }
+
+    code {
+      font: $font-monospaced;
+      background-color: #ddd;
+      color: #666;
+      padding: 0.1em 0.5em;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font: $font-headlines;
+      margin-top: 1.5em;
+    }
+
+    h1 {
+      font-size: 1.6em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      background-color: $color-text;
+      color: $color-page-background;
+      display: inline;
+      padding: 0.3em 0.6em;
+      margin: 1em 0;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+
+      a {
+        color: $color-page-background;
+        border: none;
+      }
+    }
+
+    pre {
+      font: $font-monospaced;
+    }
   }
 }
 

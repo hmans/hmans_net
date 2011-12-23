@@ -6,22 +6,16 @@ $font-headlines: 15px "Inder";
 
 @include schnitzel-complete;
 
-.container {
-  @include schnitzel-container;
-}
-
-.post {
+article.post {
   margin: 5em 0;
-  .title {
+  header {
     margin-bottom: 1em;
     .info { display: inline; margin-left: 1em; color: #999 }
   }
-  .body {
-    @include schnitzel-text;
-    .summary {
-      font: 18px "Inder";
-      line-height: 150%;
-      color: #000;
-    }
+
+  p.summary {
+    font: 18px "Inder";
+    line-height: 150%;
+    color: #000;
   }
 }

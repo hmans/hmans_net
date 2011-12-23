@@ -1,10 +1,10 @@
-.post
-  .title
+%article.post
+  %header
     %h2
       %a{href: post.to_url}= post.title
     .info
       #{post.date}
-  .body
-    - if post.summary
-      %p.summary= post.summary
-    = post.to_html
+
+  - if post.summary
+    %p.summary= post.summary
+  = post.to_html
