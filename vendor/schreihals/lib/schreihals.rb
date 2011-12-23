@@ -12,7 +12,12 @@ require 'active_support/core_ext/string/inflections'
 module Schreihals
   class Post
     include DocumentMapper::Document
-    self.directory = 'posts'
+
+    def read_yaml_with_defaults
+      read_yaml_without_defaults
+      attributes[:status] ||= 'published'
+    end
+    alias_method_chain :read_yaml, :defaults
 
     def to_url
       "/#{year}/#{month}/#{day}/#{slug}/"
@@ -21,6 +26,9 @@ module Schreihals
     def disqus_identifier
       attributes[:disqus_identifier] || file_name_without_extension
     end
+
+    # load all posts.
+    self.directory = 'posts'
   end
 
   class App < Sinatra::Application
@@ -60,7 +68,9 @@ module Schreihals
     end
 
     get '/' do
-      @posts = Post.order_by(:date => :desc).all
+      @posts = Post.order_by(:date => :desc)
+      @posts = @posts.where(:status => 'published') if production?
+      @posts = @posts.all
       haml :index
     end
 

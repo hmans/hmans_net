@@ -13,6 +13,8 @@ article.post {
     .info { display: inline; margin-left: 1em; color: #999 }
   }
 
+  &.draft header h2 { background-color: #ccc; }
+
   p.summary {
     font: 18px "Inder";
     line-height: 150%;
