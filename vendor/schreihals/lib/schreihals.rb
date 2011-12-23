@@ -22,6 +22,7 @@ module Schreihals
   class App < Sinatra::Application
     set :blog_title, "My Schreihals Blog"
     set :author_name, "Author"
+    set :disqus_name, nil
 
     use Rack::Cache
     use Rack::Static, :urls => ["/media"], :root => "public"
@@ -38,6 +39,10 @@ module Schreihals
       def link_to(title, thing)
         url = thing.respond_to?(:to_url) ? thing.to_url : thing.to_s
         haml "%a{href: '#{url}'} #{title}"
+      end
+
+      def show_disqus?
+        settings.disqus_name.present?
       end
     end
 
