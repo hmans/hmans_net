@@ -44,6 +44,10 @@ module Schreihals
       def show_disqus?
         settings.disqus_name.present?
       end
+
+      def production?
+        settings.environment.to_sym == :production
+      end
     end
 
     before do
