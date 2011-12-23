@@ -16,3 +16,13 @@ overall design goals?
 ## Usage
 
 TODO: soon
+
+## Stuff
+
+Just a list of keywords I need to write about:
+
+* Configuration
+* Automatic `date` and `slug` recognition
+* `status` attribute and drafts
+* `disqus_identifier` attribute
+* Using different post formats (markdown, textile, haml etc.)
