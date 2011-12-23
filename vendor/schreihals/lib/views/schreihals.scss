@@ -2,7 +2,7 @@
 @import 'schnitzelstyle';
 
 $font-default: 15px "Droid Serif";
-$font-headlines: 100% "Inder";
+$font-headlines: 15px "Inder";
 
 @include schnitzel-complete;
 
@@ -13,5 +13,12 @@ $font-headlines: 100% "Inder";
     margin-bottom: 1em;
     .info { display: inline; margin-left: 1em; color: #999 }
   }
-  .body { @include schnitzel-text }
+  .body {
+    @include schnitzel-text;
+    .summary {
+      font: 18px "Inder";
+      line-height: 150%;
+      color: #000;
+    }
+  }
 }
