@@ -1,5 +1,7 @@
 = partial @post
-= partial 'disqus' if show_disqus?
+
+- if show_disqus?
+  = partial 'disqus', :disqus_identifier => @post.disqus_identifier
 
 %p
   = link_to 'Back to Index', '/'

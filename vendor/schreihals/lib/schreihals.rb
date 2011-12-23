@@ -17,6 +17,10 @@ module Schreihals
     def to_url
       "/#{year}/#{month}/#{day}/#{slug}/"
     end
+
+    def disqus_identifier
+      attributes[:disqus_identifier] || file_name_without_extension
+    end
   end
 
   class App < Sinatra::Application
