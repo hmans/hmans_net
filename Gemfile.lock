@@ -1,5 +1,11 @@
 PATH
-  remote: ..
+  remote: vendor/schnitzelstyle
+  specs:
+    schnitzelstyle (0.0.1)
+      sass
+
+PATH
+  remote: vendor/schreihals
   specs:
     schreihals (0.0.1)
       activesupport
@@ -9,12 +15,6 @@ PATH
       sass
       shotgun
       sinatra
-
-PATH
-  remote: ../../schnitzelstyle
-  specs:
-    schnitzelstyle (0.0.1)
-      sass
 
 GEM
   remote: https://rubygems.org/
