@@ -6,6 +6,9 @@ $font-headlines: 15px "Inder";
 
 @include schnitzel-complete;
 
+.container {
+  @include schnitzel-container;
+}
 
 .post {
   margin: 5em 0;

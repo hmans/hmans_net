@@ -6,9 +6,13 @@
     / %link{ href: '/atom.xml', title: "Subscribe via Atom Feed", rel: 'alternate', type: 'application/atom+xml' }
     / %script{ src: asset_path('application.js') }
   %body
-    %header
-      %strong= settings.author_name
-      is using Schreihals.
-
     .container
-      = yield
+      %header
+        %strong= settings.author_name
+        is using Schreihals.
+
+      %section
+        = yield
+
+      %footer
+        <3

@@ -34,12 +34,7 @@
   // .twelve { @include schnitzel-grid-column(12, $margin, $padding); }
 }
 
-@mixin schnitzel-grid {
-  .container {
-    margin: 0 auto;
-
-    .row {
-      @include schnitzel-grid-row;
-    }
-  }
+@mixin schnitzel-container {
+  margin: 0 auto;
+  width: 600px;
 }
