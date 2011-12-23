@@ -38,6 +38,10 @@ module Schreihals
       end
     end
 
+    before do
+      cache_control :public, :must_revalidate, :max_age => 60
+    end
+
     get '/' do
       @posts = Post.order_by(:date => :desc).all
       haml :index
