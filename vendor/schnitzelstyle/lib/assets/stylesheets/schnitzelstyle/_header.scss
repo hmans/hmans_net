@@ -1,0 +1,9 @@
+@mixin schnitzel-header {
+  header {
+    margin-bottom: 2em;
+    font-size: 2em;
+    color: #777;
+
+    strong { color: #000; }
+  }
+}

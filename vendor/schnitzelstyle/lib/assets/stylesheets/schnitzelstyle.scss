@@ -1,0 +1,16 @@
+@import 'schnitzelstyle/configuration';
+@import 'schnitzelstyle/reset';
+@import 'schnitzelstyle/basics';
+@import 'schnitzelstyle/layout';
+@import 'schnitzelstyle/header';
+@import 'schnitzelstyle/grid';
+@import 'schnitzelstyle/typography';
+
+@mixin schnitzel-complete {
+  @include schnitzel-reset;
+  @include schnitzel-basics;
+  @include schnitzel-layout;
+  @include schnitzel-header;
+  @include schnitzel-typography;
+  @include schnitzel-grid;
+}
