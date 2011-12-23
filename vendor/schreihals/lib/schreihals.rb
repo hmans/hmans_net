@@ -5,6 +5,7 @@ require 'sass'
 require 'redcarpet'
 require 'schnitzelstyle'
 require 'document_mapper'
+require 'rack-cache'
 
 require 'active_support/core_ext/string/inflections'
 
@@ -22,6 +23,7 @@ module Schreihals
     set :blog_title, "My Schreihals Blog"
     set :author_name, "Author"
 
+    use Rack::Cache
     use Rack::Static, :urls => ["/media"], :root => "public"
 
     helpers do
