@@ -1,9 +1,13 @@
-- complete ||= false
-- show_read_more = !complete && post.summary.present?
+- complete       ||= false
+- show_title     ||= post.title.present?
+- show_summary   ||= post.summary.present?
+- show_body      ||= complete || !show_summary
+- show_read_more ||= !complete && post.summary.present?
+- show_permalink ||= post.post? && !show_read_more
 
 %article.post{class: post.status}
   %header
-    - if post.title.present?
+    - if show_title
       %h2
         %a{href: post.link.present? ? post.link : post.to_url}
           = post.title
@@ -12,7 +16,7 @@
         - if post.date.present?
           #{post.date}
 
-  - if complete || post.summary
+  - if show_summary
     .summary
       ~ markdown post.summary
       - if show_read_more
@@ -20,8 +24,8 @@
           = link_to (post.read_more || settings.read_more), post
           →
 
-  - if !show_read_more
+  - if show_body
     ~ post.to_html
 
-  - if post.post? && !show_read_more
+  - if show_permalink
     %p.permalink= link_to '∞', post
