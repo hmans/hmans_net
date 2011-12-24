@@ -15,7 +15,10 @@ module Schreihals
 
     def read_yaml_with_defaults
       read_yaml_without_defaults
-      attributes[:status] ||= 'published'
+      self.attributes = {
+        disqus: true,
+        status: 'published'
+      }.merge(attributes)
     end
     alias_method_chain :read_yaml, :defaults
 
@@ -25,6 +28,14 @@ module Schreihals
 
     def disqus_identifier
       attributes[:disqus_identifier] || file_name_without_extension
+    end
+
+    def disqus?
+      disqus && published?
+    end
+
+    def published?
+      status == 'published'
     end
 
     # load all posts.

@@ -1,6 +1,6 @@
 = partial @post
 
-- if show_disqus?
+- if show_disqus? && @post.disqus?
   = partial 'disqus', :disqus_identifier => @post.disqus_identifier
 
 %p
