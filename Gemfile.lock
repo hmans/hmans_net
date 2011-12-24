@@ -18,9 +18,9 @@ GIT
 
 GIT
   remote: git://github.com/hmans/schreihals.git
-  revision: 6f5853e301ee0a42c58d4095887f1ffb783497bb
+  revision: 145a51c4b9431f8e8c07a2217667ac24c239f654
   specs:
-    schreihals (0.0.1)
+    schreihals (0.0.2.dev)
       activesupport
       coderay
       document_mapper
