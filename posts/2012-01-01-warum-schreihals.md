@@ -20,7 +20,7 @@ Nachdem ich wiederholt feststellen musste, dass so ziemlich alle Blogging-Tools 
 
 Schreihals kann all die Dinge da oben. Und sonst nicht viel. Wahrscheinlich kann man damit nicht _alles_ machen. Aber für's (technische) Bloggen sollte es reichen.
 
-## Wie funktioniert der Spaß?
+### Wie funktioniert der Spaß?
 
 Ich möchte man kurz beschreiben, wie man (gemessen am aktuellen Stand des Codes) ein Schreihals-Blog aufsetzt. Später werde ich vielleicht ein Executable zur Verfügung stellen, mit dem man ein Skelett für ein neues Blog generieren kann. Aber ihr werdet sehen, dass das fast nicht nötig ist.
 
@@ -55,7 +55,7 @@ Ich möchte man kurz beschreiben, wie man (gemessen am aktuellen Stand des Codes
 
 3. Das war's! Jetzt müssen wir das Ding nur noch starten (z.B. per `rackup`, `shotgun` etc.) oder deployen (läuft out of the box auf einem kostenlosen Heroku-Account).
 
-## Ein paar Tips & Tricks
+### Ein paar Tips & Tricks
 
 * Posts ohne Datum (`date`-Attribut) sind ganz normale Seiten. Wie zum Beispiel [das Impressum](/impressum) dieses Blogs.
 * Posts können als `status: draft` markiert werden. Sie sind dann zwar immer noch über ihre URL aufrufbar, werden aber nicht automatisch auf der Startseite angezeigt.
