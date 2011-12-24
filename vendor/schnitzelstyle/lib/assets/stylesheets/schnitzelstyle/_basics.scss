@@ -123,6 +123,13 @@
       display: block;
       padding: 0.5em;
     }
+
+    blockquote {
+      color: #777;
+      padding-left: 1em;
+      font-style: italic;
+      border-left: 5px solid #eee;
+    }
   }
 }
 
