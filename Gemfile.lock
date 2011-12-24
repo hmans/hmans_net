@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: git://github.com/hmans/schnitzelstyle.git
-  revision: 34fec6f41e141733879a7bec682d2592cc3cb607
+  revision: 01878029e423ec2098c9ba7f76fd9913bc2cbff1
   specs:
     schnitzelstyle (0.0.1)
       sass
