@@ -22,7 +22,7 @@ Eines der ersten (und, naja, wenigen) elektronischen Bücher, die ich mir währe
 
 Und dann sitzt man da und liest so ein Buch… auf einem Kindle. Leute! Wenn es mit der Welt bergab geht, war das möglicherweise allein mein Verdienst.
 
-Nachdem ich den Kindle verkauft hatte ([@halfbyte](http://www.halfbyte.org/) scheint damit sehr viel mehr Spaß zu haben), wunderte ich mich, wie ich das Buch nun weiter lesen würde (den Kindle verkaufen und dann auf dem iPad weiter zu lesen, das wäre ja albern, das geht doch nicht). Ich erzählte meiner Freundin von meiner Absicht, wahrscheinlich einfach noch einmal die Taschenbuchausgabe zu kaufen. Heute schenkte sie mir genau diese zu Weihnachten. Hurra! (Wann habt ihr zuletzt ein Kindle-Buch geschenkt bekommen?)
+Nachdem ich den Kindle verkauft hatte ([@halfbyte](http://jan.krutisch.de/) scheint damit sehr viel mehr Spaß zu haben), wunderte ich mich, wie ich das Buch nun weiter lesen würde (den Kindle verkaufen und dann auf dem iPad weiter zu lesen, das wäre ja albern, das geht doch nicht). Ich erzählte meiner Freundin von meiner Absicht, wahrscheinlich einfach noch einmal die Taschenbuchausgabe zu kaufen. Heute schenkte sie mir genau diese zu Weihnachten. Hurra! (Wann habt ihr zuletzt ein Kindle-Buch geschenkt bekommen?)
 
 Die Kapitel in "Super Sad True Love Story" sind Auszüge aus den Tagebüchern des Protagonisten Lenny und seiner Flamme Eunice, einer Anfangzwanzigfrau, die Lennys Altbackenheit gleichzeitig süß und doch irgendwie abstoßend findet, und sowieso voll _digital_ und _connected_ drauf ist. Lenny will nur auf sie aufpassen, sie beschützen, sie lieben. Eunice will nur nicht die Sonderangebote bei _AssLuxury_ verpassen.
 
