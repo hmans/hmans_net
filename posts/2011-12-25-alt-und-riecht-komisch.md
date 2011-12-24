@@ -1,6 +1,6 @@
 ---
 title: Alt und riecht komisch
-summary: Wie ich erst keinen Kindle wollte, dann doch einen kaufte, mich dann irgendwie unwohl fühlte, den Kindle wieder verkaufte und letztendlich noch einen Grund fand, warum ich echte Bücher bevorzuge.
+summary: Wie ich erst keinen Kindle wollte, dann doch einen kaufte, mich dann irgendwie unwohl fühlte, den Kindle wieder verkaufte und letztendlich noch einen kleinen Grund fand, warum ich echte Bücher bevorzuge.
 link:
 
 # More options:
