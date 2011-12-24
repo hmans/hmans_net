@@ -32,13 +32,14 @@
   }
 
   #container>header {
-    font: $font-header;
-    margin-bottom: 2em;
-
-    nav {
-      background-color: black;
-      color: white;
+    h1 {
+      font: $font-headlines;
+      font-size: 200%;
+      font-weight: bold;
+      @include floaty-title(white, #4ea4ec);
     }
+    margin-bottom: 2em;
+    color: #999;
   }
 
   #container>footer {
