@@ -56,6 +56,7 @@ module Schreihals
     set :blog_title, "My Schreihals Blog"
     set :author_name, "Author"
     set :disqus_name, nil
+    set :google_analytics_id, nil
 
     use Rack::ShowExceptions
     use Rack::Cache
