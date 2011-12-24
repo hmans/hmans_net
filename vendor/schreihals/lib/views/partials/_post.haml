@@ -3,7 +3,8 @@
     %h2
       %a{href: post.to_url}= post.title
     .info
-      #{post.date}
+      - if post.date.present?
+        #{post.date}
 
   - if post.summary
     %p.summary= post.summary
