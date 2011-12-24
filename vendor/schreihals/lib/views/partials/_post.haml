@@ -1,3 +1,6 @@
+- complete ||= false
+- show_read_more = !complete && post.summary.present?
+
 %article.post{class: post.status}
   %header
     - if post.title.present?
@@ -9,10 +12,16 @@
         - if post.date.present?
           #{post.date}
 
-  - if post.summary
-    %p.summary= post.summary
+  - if complete || post.summary
+    .summary
+      ~ markdown post.summary
+      - if show_read_more
+        %p
+          = link_to (post.read_more || settings.read_more), post
+          →
 
-  ~ post.to_html
+  - if !show_read_more
+    ~ post.to_html
 
-  - if post.post?
+  - if post.post? && !show_read_more
     %p.permalink= link_to '∞', post

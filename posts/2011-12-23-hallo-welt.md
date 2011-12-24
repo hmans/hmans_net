@@ -2,6 +2,7 @@
 title: Hallo, du wundervolle Welt.
 tags: [schreihals]
 summary: "Entwickler bauen deswegen so gerne ihre eigenen Blog-Engines, weil es den Zeitpunkt hinaus zögert, an dem sie tatsächlich bloggen müssen; das ist nämlich sehr viel schwieriger."
+read_more: Worauf will er hinaus?
 ---
 
 Früher habe ich gerne viel gebloggt, aber die letzten Jahre nicht so sehr. Weil mich die verfügbaren Optionen, mit welcher Software man so ein Blog betreiben kann, nicht sehr befriedigt haben. Die großen Engines wie Wordpress sind zwischenzeitlich zu kompletten CMS heran gewachsen, die sich ganz hervorragend zum Aufsetzen ganzer Web-Magazine eignen, aber nicht, wenn man einfach nur ab und zu seine Programmier- oder andere Erlebnisse ohne viel Drumherum in Textform gießen will.

@@ -11,6 +11,7 @@ class MyBlog < Schreihals::App
   set :author_name, "Hendrik Mans"
   set :disqus_name, "hmans"
   set :google_analytics_id, "UA-7555710-4"
+  set :read_more, "Kompletten Artikel lesen"
 end
 
 run MyBlog

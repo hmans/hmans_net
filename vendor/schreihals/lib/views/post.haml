@@ -1,6 +1,6 @@
 %section.post
   .container
-    = partial @post
+    = partial @post, complete: true
 
 - if show_disqus? && @post.disqus?
   %section.disqus

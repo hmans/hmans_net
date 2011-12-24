@@ -2,9 +2,9 @@
 title: Warum ich Schreihals gebaut habe.
 status: draft
 tags: [schreihals]
+summary: Es gibt nun wirklich genug Blogging-Tools "für Hacker". Wieso also noch eines bauen? Nun, erstens programmiere ich gern. Weil es Spaß macht. Und man dabei _immer_ etwas Neues lernt.
 ---
 
-Es gibt nun wirklich genug Blogging-Tools "für Hacker". Wieso also noch eines bauen? Nun, erstens programmiere ich gern. Weil es Spaß macht. Und man dabei _immer_ etwas Neues lernt.
 
 Zweitens hat mich bisher keines der anderen Tools so richtig überzeugen können. Wenn ich eine Liste von Dingen schreiben müsste, die ich vom Weblog-Tool meiner Träume erwarten würde, dann würde die ungefähr so aussehen:
 

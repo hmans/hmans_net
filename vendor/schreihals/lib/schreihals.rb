@@ -70,6 +70,7 @@ module Schreihals
     set :author_name, "Author"
     set :disqus_name, nil
     set :google_analytics_id, nil
+    set :read_more, "Read Complete Article"
 
     use Rack::ShowExceptions
     use Rack::Cache
