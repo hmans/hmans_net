@@ -20,7 +20,7 @@ module Schreihals
     alias_method_chain :read_yaml, :defaults
 
     def to_url
-      date.present? ? "/#{year}/#{month}/#{day}/#{slug}/" : "/#{slug}"
+      date.present? ? "/#{year}/#{month}/#{day}/#{slug}/" : "/#{slug}/"
     end
 
     def disqus_identifier
