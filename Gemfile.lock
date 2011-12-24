@@ -9,14 +9,16 @@ GIT
       rake (~> 0.9.0)
       tilt (~> 1.3.0)
 
-PATH
-  remote: vendor/schnitzelstyle
+GIT
+  remote: git://github.com/hmans/schnitzelstyle.git
+  revision: 34fec6f41e141733879a7bec682d2592cc3cb607
   specs:
     schnitzelstyle (0.0.1)
       sass
 
-PATH
-  remote: vendor/schreihals
+GIT
+  remote: git://github.com/hmans/schreihals.git
+  revision: 6f5853e301ee0a42c58d4095887f1ffb783497bb
   specs:
     schreihals (0.0.1)
       activesupport
@@ -27,6 +29,7 @@ PATH
       rack-codehighlighter
       redcarpet
       sass
+      schnitzelstyle (>= 0.0.1)
       shotgun
       sinatra
 
