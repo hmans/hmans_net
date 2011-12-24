@@ -47,16 +47,18 @@
   }
 
   body>footer>.container {
-    padding: 2em;
+    font: $font-footer;
+    padding: 5em 0;
     color: #999;
     text-align: right;
+    a { color: #999; }
   }
 
   *:first-child { margin-top: 0 !important }
   *:last-child { margin-bottom: 0 !important }
 
   section {
-    p, dl, li {
+    p, dl, ol, ul, li {
       margin: 0.8em 0;
       line-height: 24px;
     }
@@ -111,7 +113,7 @@
 
     pre, code {
       font: $font-monospaced;
-      background-color: #ddd;
+      background-color: #eee;
       color: #666;
     }
 
