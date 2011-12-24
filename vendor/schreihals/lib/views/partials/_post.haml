@@ -1,7 +1,9 @@
 %article.post{class: post.status}
   %header
     %h2
-      %a{href: post.to_url}= post.title
+      %a{href: post.link.present? ? post.link : post.to_url}
+        = post.title
+        = "→" if post.link.present?
     .info
       - if post.date.present?
         #{post.date}

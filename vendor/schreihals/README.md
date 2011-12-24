@@ -30,3 +30,4 @@ Just a list of keywords I need to write about:
 * deployment (Heroku!)
 * code highlighting
 * `google_analytics_id`
+* `link`
