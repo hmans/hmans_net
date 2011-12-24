@@ -1,4 +1,8 @@
-= partial @post
+%section.post
+  .container
+    = partial @post
 
 - if show_disqus? && @post.disqus?
-  = partial 'disqus', :disqus_identifier => @post.disqus_identifier
+  %section.disqus
+    .container
+      = partial 'disqus', :disqus_identifier => @post.disqus_identifier

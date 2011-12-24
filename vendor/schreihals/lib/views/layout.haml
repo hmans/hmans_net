@@ -6,13 +6,13 @@
     / %link{ href: '/atom.xml', title: "Subscribe via Atom Feed", rel: 'alternate', type: 'application/atom+xml' }
     / %script{ src: asset_path('application.js') }
   %body
-    #container
-      %header
+    %header
+      .container
         %h1
           = link_to settings.blog_title, '/'
 
-      %section
-        = yield
+    = yield
 
-      %footer
-        <3
+    %footer
+      .container
+        ~ markdown settings.blog_description

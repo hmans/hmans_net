@@ -17,7 +17,6 @@
     background-color: $color-page-background;
     color: $color-text;
     font: $font-default;
-    padding: 20px;
   }
 
   a {
@@ -28,23 +27,27 @@
     font-weight: bold;
   }
 
-  #container {
+  .container {
     @include schnitzel-container;
   }
 
-  #container>header {
+  section {
+    padding: 2em;
+  }
+
+  body>header {
+    padding: 2em 0;
+    color: #999;
     h1 {
       font: $font-headlines;
       font-size: 200%;
       font-weight: bold;
       @include floaty-title(white, #4ea4ec);
     }
-    margin-bottom: 2em;
-    color: #999;
   }
 
-  #container>footer {
-    margin-top: 4em;
+  body>footer>.container {
+    padding: 2em;
     color: #999;
     text-align: right;
   }
