@@ -49,6 +49,7 @@ module Schreihals
     set :author_name, "Author"
     set :disqus_name, nil
 
+    use Rack::ShowExceptions
     use Rack::Cache
     use Rack::Static, :urls => ["/media"], :root => "public"
     use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code", :pattern => /\A:::(\w+)\s*\n/
