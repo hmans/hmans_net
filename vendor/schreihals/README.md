@@ -28,3 +28,5 @@ Just a list of keywords I need to write about:
 * Using different post formats (markdown, textile, haml etc.)
 * pages (= posts without dates)
 * deployment (Heroku!)
+* code highlighting
+* `google_analytics_id`
