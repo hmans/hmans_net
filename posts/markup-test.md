@@ -1,6 +1,6 @@
 ---
 title: Schreihals Markup test
-disqus: false
+disqus: true
 ---
 
 Excepteur duis boudin dolor, short loin pork chop tail in quis chuck strip steak proident kielbasa corned beef. Reprehenderit duis sausage, dolore aliquip irure in filet mignon turkey. In laboris sint cupidatat pork loin esse.
