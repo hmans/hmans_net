@@ -6,6 +6,8 @@ require 'redcarpet'
 require 'schnitzelstyle'
 require 'document_mapper'
 require 'rack-cache'
+require 'coderay'
+require 'rack/codehighlighter'
 
 require 'active_support/core_ext/string/inflections'
 
@@ -49,6 +51,7 @@ module Schreihals
 
     use Rack::Cache
     use Rack::Static, :urls => ["/media"], :root => "public"
+    use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code", :pattern => /\A:::(\w+)\s*\n/
 
     helpers do
       def partial(thing, locals = {})

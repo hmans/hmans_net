@@ -76,13 +76,6 @@
       color: #666;
     }
 
-    code {
-      font: $font-monospaced;
-      background-color: #ddd;
-      color: #666;
-      padding: 0.1em 0.5em;
-    }
-
     h1, h2, h3, h4, h5, h6 {
       font: $font-headlines;
       margin-top: 1em;
@@ -108,11 +101,17 @@
       }
     }
 
-    pre {
+    pre, code {
+      font: $font-monospaced;
       background-color: #ddd;
+      color: #666;
+    }
+
+    code { padding: 0.1em 0.5em; }
+
+    pre {
       display: block;
       padding: 0.5em;
-      code { padding: 0 }
     }
   }
 }
