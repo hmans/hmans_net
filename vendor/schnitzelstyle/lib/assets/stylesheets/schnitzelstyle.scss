@@ -1,9 +1,0 @@
-@import 'schnitzelstyle/configuration';
-@import 'schnitzelstyle/reset';
-@import 'schnitzelstyle/basics';
-@import 'schnitzelstyle/grid';
-
-@mixin schnitzel-complete {
-  @include schnitzel-reset;
-  @include schnitzel-basics;
-}
