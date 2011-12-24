@@ -74,16 +74,24 @@ module Schreihals
       haml :index
     end
 
+    get '/schreihals.css' do
+      scss :schreihals
+    end
+
     get '/:year/:month/:day/:slug/?' do |year, month, day, slug|
+      render_page(slug)
+    end
+
+    get '/:slug/?' do |slug|
+      render_page(slug)
+    end
+
+    def render_page(slug)
       if @post = Post.where(:slug => slug).first
         haml :post
       else
         "not found :("
       end
-    end
-
-    get '/schreihals.css' do
-      scss :schreihals
     end
   end
 end
