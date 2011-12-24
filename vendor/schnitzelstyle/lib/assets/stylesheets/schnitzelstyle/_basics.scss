@@ -1,3 +1,16 @@
+@mixin floaty-title($fg, $bg) {
+  background-color: $bg;
+  color: $fg;
+  display: inline-block;
+  padding: 0.3em 0.6em;
+
+  a {
+    color: $fg;
+    border: none;
+    &:hover { color: $fg }
+  }
+}
+
 @mixin schnitzel-basics {
   body {
     background-color: $color-page-background;
@@ -72,7 +85,8 @@
 
     h1, h2, h3, h4, h5, h6 {
       font: $font-headlines;
-      margin-top: 1.5em;
+      margin-top: 1em;
+      @include floaty-title($color-text, lighten($color-text, 50%));
     }
 
     h1 {
@@ -80,19 +94,10 @@
       text-transform: uppercase;
     }
 
-    h2 {
-      background-color: $color-text;
-      color: $color-page-background;
-      display: inline;
-      padding: 0.3em 0.6em;
-      margin: 1em 0;
+    article>header>h2 {
+      @include floaty-title($color-page-background, $color-text);
       text-transform: uppercase;
       letter-spacing: 0.15em;
-
-      a {
-        color: $color-page-background;
-        border: none;
-      }
     }
 
     pre {
