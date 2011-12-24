@@ -27,3 +27,4 @@ Just a list of keywords I need to write about:
 * `disqus` and `disqus_identifier` attributes
 * Using different post formats (markdown, textile, haml etc.)
 * pages (= posts without dates)
+* deployment (Heroku!)
