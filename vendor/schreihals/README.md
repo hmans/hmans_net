@@ -24,5 +24,6 @@ Just a list of keywords I need to write about:
 * Configuration
 * Automatic `date` and `slug` recognition
 * `status` attribute and drafts
-* `disqus_identifier` attribute
+* `disqus` and `disqus_identifier` attributes
 * Using different post formats (markdown, textile, haml etc.)
+* pages (= posts without dates)
