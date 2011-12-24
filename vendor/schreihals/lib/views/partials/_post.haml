@@ -10,3 +10,6 @@
     %p.summary= post.summary
 
   ~ post.to_html
+
+  - if post.post?
+    %p= link_to '∞', @post

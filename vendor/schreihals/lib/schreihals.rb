@@ -40,6 +40,14 @@ module Schreihals
       status == 'published'
     end
 
+    def post?
+      date.present?
+    end
+
+    def page?
+      !post?
+    end
+
     # load all posts.
     self.directory = 'posts'
   end
