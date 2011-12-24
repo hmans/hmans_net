@@ -119,7 +119,7 @@
 }
 
 /* http://nicolasgallagher.com/micro-clearfix-hack/ */
-@mixin micro-clearfix-hack {
+@mixin clearfix {
   &:before, &:after {
     content: "";
     display: table;
