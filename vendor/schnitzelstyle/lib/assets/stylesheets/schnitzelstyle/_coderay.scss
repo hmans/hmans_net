@@ -1,0 +1,24 @@
+.CodeRay {
+  background-color: #232323;
+  color: #E6E0DB;
+  overflow: auto;
+
+  .attribute { color:#E7BE69 }                      /* html attribute */
+  .comment  { color:#BC9358; font-style: italic; } /* comment */
+  .ch { color:#509E4F }                      /* escaped character */
+  .class { color:#FFF }                         /* class */
+  .constant, .predefined-constant { color:#FFF }                         /* constant */
+  .float { color:#A4C260 }                      /* float */
+  .function { color:#FFC56D }                      /* function */
+  .global { color:#D0CFFE }                      /* global variable */
+  .integer  { color:#A4C260 }                      /* integer */
+  .inline { background:#151515 }                 /* inline code */
+  .instance-variable { color:#D0CFFE }                      /* instance variable */
+  .preprocessor { color:#E7BE69 }                      /* doctype */
+  .keyword  { color:#CB7832 }                      /* keyword */
+  .regexp { color:#A4C260 }                      /* regex */
+  .string  { color:#A4C260 }                      /* string */
+  .symbol { color:#6C9CBD }                      /* symbol */
+  .tag { color:#E7BE69 }                      /* html tag */
+  .pc { color:#6C9CBD }                      /* boolean */
+}
