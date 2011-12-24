@@ -94,14 +94,25 @@
       text-transform: uppercase;
     }
 
-    article>header>h2 {
-      @include floaty-title($color-page-background, $color-text);
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
+    article {
+      header {
+        h2 {
+          @include floaty-title($color-page-background, $color-text);
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+        }
+      }
+
+      img {
+        max-width: 600px;
+      }
     }
 
     pre {
-      font: $font-monospaced;
+      background-color: #ddd;
+      display: block;
+      padding: 0.5em;
+      code { padding: 0 }
     }
   }
 }
