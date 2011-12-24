@@ -8,7 +8,8 @@
   %body
     #container
       %header
-        %h1= settings.blog_title
+        %h1
+          = link_to settings.blog_title, '/'
 
       %section
         = yield
