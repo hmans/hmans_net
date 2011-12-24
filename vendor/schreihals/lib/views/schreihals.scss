@@ -29,3 +29,16 @@ article.post {
     }
   }
 }
+
+#dsq-content {
+  a {
+    border: 0;
+  }
+  #dsq-reply {
+    margin-bottom: 2em;
+  }
+  h3 {
+    margin-top: 1em;
+    @include clearfix;
+  }
+}
