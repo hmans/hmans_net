@@ -54,6 +54,7 @@ module Schreihals
 
   class App < Sinatra::Application
     set :blog_title, "My Schreihals Blog"
+    set :blog_url, ""
     set :author_name, "Author"
     set :disqus_name, nil
     set :google_analytics_id, nil
@@ -74,8 +75,13 @@ module Schreihals
       end
 
       def link_to(title, thing)
+        haml "%a{href: '#{url_for thing}'} #{title}"
+      end
+
+      def url_for(thing, options = {})
         url = thing.respond_to?(:to_url) ? thing.to_url : thing.to_s
-        haml "%a{href: '#{url}'} #{title}"
+        url = "#{settings.blog_url}#{url}" if options[:absolute]
+        url
       end
 
       def show_disqus?
@@ -94,12 +100,18 @@ module Schreihals
     get '/' do
       @posts = Post.order_by(:date => :desc)
       @posts = @posts.where(:status => 'published') if production?
-      @posts = @posts.all
+      @posts = @posts.limit(10).all
       haml :index
     end
 
     get '/schreihals.css' do
       scss :schreihals
+    end
+
+    get '/atom.xml' do
+      @posts = Post.where(:status => 'published').order_by(:date => :desc).limit(10).all
+      content_type 'application/xml+atom'
+      haml :atom, :layout => false
     end
 
     get '/:year/:month/:day/:slug/?' do |year, month, day, slug|
