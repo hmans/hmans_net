@@ -1,12 +1,13 @@
 %article.post{class: post.status}
   %header
-    %h2
-      %a{href: post.link.present? ? post.link : post.to_url}
-        = post.title
-        = "→" if post.link.present?
-    .info
-      - if post.date.present?
-        #{post.date}
+    - if post.title.present?
+      %h2
+        %a{href: post.link.present? ? post.link : post.to_url}
+          = post.title
+          = "→" if post.link.present?
+      .info
+        - if post.date.present?
+          #{post.date}
 
   - if post.summary
     %p.summary= post.summary
