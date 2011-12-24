@@ -21,4 +21,11 @@ article.post {
     line-height: 150%;
     color: #000;
   }
+
+  p.permalink {
+    a {
+      color: lighten($color-text, 30%);
+      border: none;
+    }
+  }
 }
