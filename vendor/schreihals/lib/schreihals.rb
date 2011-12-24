@@ -15,14 +15,26 @@ module Schreihals
   class Post
     include DocumentMapper::Document
 
-    def read_yaml_with_defaults
-      read_yaml_without_defaults
+    SEPARATOR = "--MORE--" # <!-- more -->
+
+    def after_load
+      # Set some defaults
+      #
       self.attributes = {
         disqus: true,
         status: 'published'
       }.merge(attributes)
+
+      # Set slug
+      #
+      if !attributes.has_key? :slug
+        begin
+          match = attributes[:file_name_without_extension].match(/(\d{4}-\d{1,2}-\d{1,2}[-_])?(.*)/)
+          attributes[:slug] = match[2]
+        rescue NoMethodError => err
+        end
+      end
     end
-    alias_method_chain :read_yaml, :defaults
 
     def to_url
       date.present? ? "/#{year}/#{month}/#{day}/#{slug}/" : "/#{slug}/"

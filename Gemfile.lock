@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/hmans/document_mapper.git
-  revision: 860983b05da556c26243a22be747e094ff4abf3d
+  revision: aa41b73ef2fe15e6744c6a3a80cf9799d0950c61
+  branch: after_load_hook
   specs:
     document_mapper (0.1.6)
       activemodel (~> 3.1.0)
