@@ -87,6 +87,10 @@ module Schreihals
         haml :"partials/_#{name}", :locals => { name.to_sym => thing }.merge(locals)
       end
 
+      def set_page_title(title)
+        @page_title = title
+      end
+
       def link_to(title, thing)
         haml "%a{href: '#{url_for thing}'} #{title}"
       end

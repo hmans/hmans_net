@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title= [@title, settings.blog_title].compact.join(" | ")
+    %title= [@page_title, settings.blog_title].compact.join(" | ")
     %link{href: '/schreihals.css', media: "screen", rel: "stylesheet", type: "text/css"}
     %link{ href: '/atom.xml', title: "Subscribe via Atom Feed", rel: 'alternate', type: 'application/atom+xml' }
     / %script{ src: asset_path('application.js') }
