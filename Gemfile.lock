@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git://github.com/hmans/schreihals.git
-  revision: 18be86ca12028428953eb755b3bca0f6e4d426d1
+  revision: 3749a964aa32a5d6643bcc3b420d2013618818ef
   specs:
     schreihals (0.0.3.dev)
       activesupport
