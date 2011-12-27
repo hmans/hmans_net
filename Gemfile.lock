@@ -1,11 +1,11 @@
 GIT
   remote: git://github.com/hmans/document_mapper.git
-  revision: aa41b73ef2fe15e6744c6a3a80cf9799d0950c61
-  branch: after_load_hook
+  revision: c0c3d4a6bc07c1051525f18f2c3a8ce59f94541d
   specs:
     document_mapper (0.1.6)
       activemodel (~> 3.1.0)
       activesupport (~> 3.1.0)
+      json (~> 1.6.4)
       rake (~> 0.9.0)
       tilt (~> 1.3.0)
 
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git://github.com/hmans/schreihals.git
-  revision: f499d0f7d7397f33ac63ae1dc3a1a570930df02c
+  revision: 18be86ca12028428953eb755b3bca0f6e4d426d1
   specs:
     schreihals (0.0.3.dev)
       activesupport
@@ -49,6 +49,7 @@ GEM
     eventmachine (0.12.10)
     haml (3.1.4)
     i18n (0.6.0)
+    json (1.6.4)
     multi_json (1.0.4)
     nokogiri (1.5.0)
     rack (1.3.5)
