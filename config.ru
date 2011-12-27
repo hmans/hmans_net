@@ -3,6 +3,7 @@ require 'bundler'
 Bundler.require
 
 require 'schreihals'
+require 'dalli'
 
 class MyBlog < Schreihals::App
   set :blog_title, "Hendrik Mans"
@@ -16,6 +17,7 @@ class MyBlog < Schreihals::App
 
   set :documents_store, :dropbox
   set :documents_source, 'http://publicbox.heroku.com/s/timd27onyt5t5b6'
+  set :documents_cache, Dalli::Client.new
 end
 
 run MyBlog

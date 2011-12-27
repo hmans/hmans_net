@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'dalli'
+
 # we need to override data_mapper for the time being.
 gem 'document_mapper', :git => 'git://github.com/hmans/document_mapper.git'
 

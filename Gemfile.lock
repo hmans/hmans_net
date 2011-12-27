@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/hmans/document_mapper.git
-  revision: c0c3d4a6bc07c1051525f18f2c3a8ce59f94541d
+  revision: e8b06eb95f5077875f8f2645dcac0391d54dc8de
   specs:
     document_mapper (0.1.6)
       activemodel (~> 3.1.0)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git://github.com/hmans/schreihals.git
-  revision: 3749a964aa32a5d6643bcc3b420d2013618818ef
+  revision: b8d6eaeb5db29e26eb6e11dea47b7654435abc09
   specs:
     schreihals (0.0.3.dev)
       activesupport
@@ -46,6 +46,7 @@ GEM
     builder (3.0.0)
     coderay (1.0.4)
     daemons (1.1.5)
+    dalli (1.1.4)
     eventmachine (0.12.10)
     haml (3.1.4)
     i18n (0.6.0)
@@ -80,6 +81,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dalli
   document_mapper!
   schnitzelstyle!
   schreihals!
