@@ -14,8 +14,8 @@ class MyBlog < Schreihals::App
   set :google_analytics_id, "UA-7555710-4"
   set :read_more, "Kompletten Artikel lesen"
 
-  # set :documents_store, :dropbox
-  # set :documents_source, 'http://publicbox.heroku.com/s/timd27onyt5t5b6'
+  set :documents_store, :dropbox
+  set :documents_source, 'http://publicbox.heroku.com/s/timd27onyt5t5b6'
 end
 
 run MyBlog
