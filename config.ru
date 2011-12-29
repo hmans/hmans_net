@@ -21,4 +21,6 @@ class MyBlog < Schreihals::App
 end
 
 # Not entirely sure why this works, but it does. Need to investigate.
-run Rack::Cascade.new([MyBlog])
+#run Rack::Cascade.new([MyBlog])
+
+run MyBlog
