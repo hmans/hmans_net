@@ -20,4 +20,5 @@ class MyBlog < Schreihals::App
   # set :documents_cache, Dalli::Client.new
 end
 
-run MyBlog
+# Not entirely sure why this works, but it does. Need to investigate.
+run Rack::Cascade.new([MyBlog])
