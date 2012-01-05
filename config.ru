@@ -13,6 +13,7 @@ class MyBlog < Schreihals::App
   set :author_name, "Hendrik Mans"
   set :disqus_name, "hmans"
   set :google_analytics_id, "UA-7555710-4"
+  set :gauges_id, "4f0570ea613f5d5351000001"
   set :read_more, "Kompletten Artikel lesen"
 
   # set :documents_store, :dropbox

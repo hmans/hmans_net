@@ -11,14 +11,14 @@ GIT
 
 GIT
   remote: git://github.com/hmans/schnitzelstyle.git
-  revision: 951fae714e29221d2929b7a3ca0c2ccfbc5e9b3d
+  revision: 6257d756a27d4f0395ded2fc4e5414fccc51d153
   specs:
     schnitzelstyle (0.0.1)
       sass
 
 GIT
   remote: git://github.com/hmans/schreihals.git
-  revision: 00f8a2267b4407280d18df0a5f83b49666abc42e
+  revision: 0e80488f3975257e46f58cbbd101e5c0e2aeb668
   specs:
     schreihals (0.0.3.dev)
       activesupport
