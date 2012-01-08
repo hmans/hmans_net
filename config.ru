@@ -3,7 +3,6 @@ require 'bundler'
 Bundler.require
 
 require 'schreihals'
-require 'dalli'
 
 class MyBlog < Schreihals::App
   set :blog_title, "Hendrik Mans"
@@ -20,9 +19,13 @@ class MyBlog < Schreihals::App
   # set :documents_store, :dropbox
   # set :documents_source, 'http://publicbox.heroku.com/s/timd27onyt5t5b6'
   # set :documents_cache, Dalli::Client.new
-end
 
-# Not entirely sure why this works, but it does. Need to investigate.
-#run Rack::Cascade.new([MyBlog])
+  # I'm redirecting my /rss URL because it's still getting heaps of hits
+  # from the Tumblr days.
+  #
+  get '/rss' do
+    redirect '/atom.xml'
+  end
+end
 
 run MyBlog
