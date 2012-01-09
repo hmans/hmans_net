@@ -4,3 +4,7 @@ $font-default:  16px "PT Serif";
 $font-header:   15px "Inder";
 
 @import 'schreihals';
+
+body {
+  background: url(/background.png);
+}
