@@ -3,6 +3,7 @@ require 'bundler'
 Bundler.require
 
 require 'schreihals'
+require 'rack/rewrite'
 
 class MyBlog < Schreihals::App
   set :blog_title, "Hendrik Mans"
@@ -27,5 +28,14 @@ class MyBlog < Schreihals::App
     redirect '/atom.xml'
   end
 end
+
+use Rack::Rewrite do
+  if ENV['RACK_ENV'] == 'production'
+    r301 %r{.*}, 'http://hendrik.mans.de$&', :if => Proc.new { |env|
+      env['SERVER_NAME'] != 'hendrik.mans.de'
+    }
+  end
+end
+
 
 run MyBlog
