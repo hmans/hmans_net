@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/hmans/schreihals.git
-  revision: 38b2cb9e1020651204bf261faf84f97176fad99d
+  revision: 217037bc917341e2a0d7fe59e0e8ac47f5e95dc1
   branch: mongo_pivot
   specs:
     schreihals (0.0.3)
