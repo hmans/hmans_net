@@ -10,8 +10,8 @@ group :development do
 end
 
 # use development versions of our two gems.
-gem 'schnitzelstyle',  :git => 'git://github.com/hmans/schnitzelstyle.git'
-gem 'schreihals',      :git => 'git://github.com/hmans/schreihals.git'
+gem 'schnitzelstyle',  git: 'git://github.com/hmans/schnitzelstyle.git'
+gem 'schreihals',      git: 'git://github.com/hmans/schreihals.git', branch: 'mongo_pivot'
 
 # for local development:
 # gem 'schnitzelstyle', :path => '../schnitzelstyle'
