@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/hmans/schreihals.git
-  revision: 1877131df2ae94239a464aefe5fc7b264ea2c8e4
+  revision: bc654c43f8054f4d25b9360359c99ac11ec8a5fa
   branch: mongo_pivot
   specs:
     schreihals (0.0.3)
@@ -17,7 +17,6 @@ GIT
       haml
       i18n
       mongoid (~> 2.4)
-      nokogiri
       omniauth
       omniauth-browserid
       rack (~> 1.4.0)
