@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/hmans/schreihals.git
-  revision: 42553c956fcfa7621f6b02c81d785d9c14066a08
+  revision: 1877131df2ae94239a464aefe5fc7b264ea2c8e4
   branch: mongo_pivot
   specs:
     schreihals (0.0.3)
@@ -80,7 +80,7 @@ GEM
       faraday
       multi_json
       omniauth (~> 1.0)
-    rack (1.4.0)
+    rack (1.4.1)
     rack-cache (1.1)
       rack (>= 0.4)
     rack-codehighlighter (0.5.0)
