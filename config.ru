@@ -8,7 +8,7 @@ require 'rack/rewrite'
 class MyBlog < Schreihals::App
   configure do
     set :blog_title, "Hendrik Mans"
-    set :blog_url, "http://hmans.net"
+    set :blog_url, "http://hendrik.mans.de/"
     set :blog_description, "...lebt in Hamburg und baut Sachen im Internet."
     set :footer, "[Impressum](/impressum) &middot; läuft auf [Schreihals](http://schreihals.info)"
     set :author_name, "Hendrik Mans"
