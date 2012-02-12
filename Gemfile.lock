@@ -47,7 +47,7 @@ GEM
       bson (= 1.5.2)
     builder (3.0.0)
     coderay (1.0.5)
-    daemons (1.1.5)
+    daemons (1.1.8)
     eventmachine (0.12.10)
     faraday (0.7.6)
       addressable (~> 2.2)
@@ -55,7 +55,7 @@ GEM
       rack (~> 1.1)
     haml (3.1.4)
     hashie (1.2.0)
-    heroku (2.19.2)
+    heroku (2.20.0)
       launchy (>= 0.3.2)
       rest-client (~> 1.6.1)
       rubyzip
