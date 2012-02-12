@@ -1,13 +1,13 @@
 GIT
   remote: git://github.com/hmans/schnitzelstyle.git
-  revision: 765c3df2a05c30c59108f7a5b19de32d9b80f374
+  revision: 8378dc007eb9fc22bb63ee01ae6948c34acee04c
   specs:
     schnitzelstyle (0.0.3.dev)
       sass
 
 GIT
   remote: git://github.com/hmans/schreihals.git
-  revision: 96fa70bf1f1d7be02f9ae6a0bd2532a7255134d7
+  revision: cc0d22266d8540ea2250c8a271ba4ac997f4e6aa
   branch: mongo_pivot
   specs:
     schreihals (0.0.3)
