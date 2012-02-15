@@ -7,20 +7,21 @@ GIT
 
 GIT
   remote: git://github.com/hmans/schreihals.git
-  revision: c11d9be1e2687b09c54776d6f056d001f36f6021
+  revision: 7b2503073ce61409e513eda7392ebd9ef2f36d47
   branch: mongo_pivot
   specs:
     schreihals (0.0.3)
       activesupport (~> 3.2.0)
       bson_ext (~> 1.5)
+      coderay
       haml
       i18n
       mongoid (~> 2.4)
       omniauth
       omniauth-browserid
-      pygments.rb
       rack (~> 1.4.0)
       rack-cache
+      rack-codehighlighter
       rake
       redcarpet
       sass
@@ -40,18 +41,17 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     addressable (2.2.6)
-    blankslate (2.1.2.4)
     bson (1.5.2)
     bson_ext (1.5.2)
       bson (= 1.5.2)
     builder (3.0.0)
+    coderay (1.0.5)
     daemons (1.1.8)
     eventmachine (0.12.10)
     faraday (0.7.6)
       addressable (~> 2.2)
       multipart-post (~> 1.1)
       rack (~> 1.1)
-    ffi (1.0.11)
     haml (3.1.4)
     hashie (1.2.0)
     heroku (2.20.0)
@@ -71,6 +71,7 @@ GEM
       tzinfo (~> 0.3.22)
     multi_json (1.0.4)
     multipart-post (1.1.5)
+    nokogiri (1.5.0)
     omniauth (1.0.2)
       hashie (~> 1.2)
       rack
@@ -78,11 +79,12 @@ GEM
       faraday
       multi_json
       omniauth (~> 1.0)
-    pygments.rb (0.2.4)
-      rubypython (~> 0.5.3)
     rack (1.4.1)
     rack-cache (1.1)
       rack (>= 0.4)
+    rack-codehighlighter (0.5.0)
+      nokogiri (>= 1.4.1)
+      rack (>= 1.0.0)
     rack-protection (1.2.0)
       rack
     rack-rewrite (1.2.1)
@@ -90,9 +92,6 @@ GEM
     redcarpet (2.1.0)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    rubypython (0.5.3)
-      blankslate (>= 2.1.2.3)
-      ffi (~> 1.0.7)
     rubyzip (0.9.6.1)
     sass (3.1.15)
     shotgun (0.9)
