@@ -1,13 +1,13 @@
 GIT
   remote: git://github.com/hmans/schnitzelstyle.git
-  revision: 8378dc007eb9fc22bb63ee01ae6948c34acee04c
+  revision: ac9014e515eca265f0f1d333a8dc412cb02cdcca
   specs:
     schnitzelstyle (0.0.3.dev)
       sass
 
 GIT
   remote: git://github.com/hmans/schreihals.git
-  revision: 7b2503073ce61409e513eda7392ebd9ef2f36d47
+  revision: d8407aaaccb04d94898bf48d2b1d9bd3b87c3684
   branch: mongo_pivot
   specs:
     schreihals (0.0.3)
@@ -21,7 +21,6 @@ GIT
       omniauth-browserid
       rack (~> 1.4.0)
       rack-cache
-      rack-codehighlighter
       rake
       redcarpet
       sass
@@ -71,7 +70,6 @@ GEM
       tzinfo (~> 0.3.22)
     multi_json (1.0.4)
     multipart-post (1.1.5)
-    nokogiri (1.5.0)
     omniauth (1.0.2)
       hashie (~> 1.2)
       rack
@@ -82,9 +80,6 @@ GEM
     rack (1.4.1)
     rack-cache (1.1)
       rack (>= 0.4)
-    rack-codehighlighter (0.5.0)
-      nokogiri (>= 1.4.1)
-      rack (>= 1.0.0)
     rack-protection (1.2.0)
       rack
     rack-rewrite (1.2.1)
