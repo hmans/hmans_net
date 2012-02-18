@@ -13,7 +13,7 @@ class App < SchnitzelPress::App
   configure do
     set :blog_title, "Hendrik Mans"
     set :blog_description, "...lebt in Hamburg und baut Sachen im Internet."
-    set :footer, "[Impressum](/impressum) &middot; läuft auf [SchnitzelPress](http://schnitzelpress.info)"
+    set :footer, "[Impressum](/impressum) &middot; läuft auf [SchnitzelPress](http://schnitzelpress.org)"
     set :author_name, "Hendrik Mans"
     set :disqus_name, "hmans"
     # set :google_analytics_id, "UA-7555710-4"
