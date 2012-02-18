@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/teamschnitzel/schnitzelpress.git
-  revision: 7ce8455fb036959105c844ed8d50ecf1001693cc
+  revision: f3740b0a07559676213a696eca464cfcc4e9ad2a
   specs:
-    schnitzelpress (0.0.4)
+    schnitzelpress (0.0.5)
       activesupport (~> 3.2.0)
       bson_ext (~> 1.5)
       chronic
