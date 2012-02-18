@@ -7,10 +7,12 @@ group :development do
   gem 'heroku'
 end
 
-# use development versions of our two gems.
-gem 'schnitzelstyle',  git: 'git://github.com/hmans/schnitzelstyle.git'
-gem 'schreihals',      git: 'git://github.com/hmans/schreihals.git'
-
-# for local development:
-# gem 'schnitzelstyle', :path => '../schnitzelstyle'
-# gem 'schreihals',     :path => '../schreihals'
+if ENV['DEV']
+  # for local development:
+  gem 'schnitzelstyle', :path => '../schnitzelstyle'
+  gem 'schreihals',     :path => '../schreihals'
+else
+  # use development versions of our two gems.
+  gem 'schnitzelstyle',  git: 'git://github.com/hmans/schnitzelstyle.git'
+  gem 'schreihals',      git: 'git://github.com/hmans/schreihals.git'
+end
