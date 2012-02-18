@@ -13,6 +13,6 @@ if ENV['DEV']
   gem 'schnitzelpress',     :path => '../schnitzelpress'
 else
   # use development versions of our two gems.
-  gem 'schnitzelstyle',  git: 'git://github.com/hmans/schnitzelstyle.git'
-  gem 'schnitzelpress',      git: 'git://github.com/hmans/schnitzelpress.git'
+  gem 'schnitzelstyle',  git: 'git://github.com/teamschnitzel/schnitzelstyle.git'
+  gem 'schnitzelpress',      git: 'git://github.com/teamschnitzel/schnitzelpress.git'
 end

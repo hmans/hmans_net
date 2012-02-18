@@ -1,5 +1,6 @@
-PATH
-  remote: ../schnitzelpress
+GIT
+  remote: git://github.com/teamschnitzel/schnitzelpress.git
+  revision: f31c63b5a61d4bb93e74f767e561b16425fac523
   specs:
     schnitzelpress (0.0.4)
       activesupport (~> 3.2.0)
@@ -22,8 +23,9 @@ PATH
       tilt (~> 1.3.0)
       wirble
 
-PATH
-  remote: ../schnitzelstyle
+GIT
+  remote: git://github.com/teamschnitzel/schnitzelstyle.git
+  revision: 0329208779005157dda707c10f44b5ee7a280f38
   specs:
     schnitzelstyle (0.0.4)
       sass
