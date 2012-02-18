@@ -1,15 +1,7 @@
-GIT
-  remote: git://github.com/hmans/schnitzelstyle.git
-  revision: 0329208779005157dda707c10f44b5ee7a280f38
+PATH
+  remote: ../schnitzelpress
   specs:
-    schnitzelstyle (0.0.4)
-      sass
-
-GIT
-  remote: git://github.com/hmans/schreihals.git
-  revision: 18a75b90d7780ed676c276470179c0c2b46f50db
-  specs:
-    schreihals (0.0.4)
+    schnitzelpress (0.0.4)
       activesupport (~> 3.2.0)
       bson_ext (~> 1.5)
       chronic
@@ -29,6 +21,12 @@ GIT
       thor
       tilt (~> 1.3.0)
       wirble
+
+PATH
+  remote: ../schnitzelstyle
+  specs:
+    schnitzelstyle (0.0.4)
+      sass
 
 GEM
   remote: https://rubygems.org/
@@ -52,7 +50,7 @@ GEM
       rack (~> 1.1)
     haml (3.1.4)
     hashie (1.2.0)
-    heroku (2.20.0)
+    heroku (2.20.1)
       launchy (>= 0.3.2)
       rest-client (~> 1.6.1)
       rubyzip
@@ -106,6 +104,6 @@ PLATFORMS
 DEPENDENCIES
   heroku
   rack-rewrite (~> 1.2.1)
+  schnitzelpress!
   schnitzelstyle!
-  schreihals!
   shotgun

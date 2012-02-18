@@ -3,17 +3,17 @@ require 'rubygems'
 require 'bundler'
 Bundler.require
 
-Schreihals.mongo_uri =
+SchnitzelPress.mongo_uri =
     ENV['MONGOLAB_URI'] ||
     ENV['MONGOHQ_URL'] ||
     ENV['MONGO_URL'] ||
     'mongodb://localhost/hmans_net'
 
-class App < Schreihals::App
+class App < SchnitzelPress::App
   configure do
     set :blog_title, "Hendrik Mans"
     set :blog_description, "...lebt in Hamburg und baut Sachen im Internet."
-    set :footer, "[Impressum](/impressum) &middot; läuft auf [Schreihals](http://schreihals.info)"
+    set :footer, "[Impressum](/impressum) &middot; läuft auf [SchnitzelPress](http://schnitzelpress.info)"
     set :author_name, "Hendrik Mans"
     set :disqus_name, "hmans"
     # set :google_analytics_id, "UA-7555710-4"
