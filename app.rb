@@ -21,12 +21,18 @@ class App < Schreihals::App
     set :twitter_id, 'hmans'
     set :read_more, "Kompletten Artikel lesen"
     set :administrator, "browser_id:hendrik@mans.de"
+    set :feed_url, 'http://feeds.feedburner.com/hmans_de'
   end
 
   # I'm redirecting my /rss URL because it's still getting heaps of hits
   # from the Tumblr days.
   #
   get '/rss' do
-    redirect '/atom.xml'
+    redirect '/feed'
+  end
+
+  # redirect old atom.xml URL, too
+  get '/atom.xml' do
+    redirect '/feed'
   end
 end
