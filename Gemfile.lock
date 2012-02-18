@@ -1,17 +1,18 @@
 GIT
   remote: git://github.com/hmans/schnitzelstyle.git
-  revision: d67d919e37973a253164cfe5ef89acae0fff5e3a
+  revision: 0329208779005157dda707c10f44b5ee7a280f38
   specs:
-    schnitzelstyle (0.0.3.dev)
+    schnitzelstyle (0.0.4)
       sass
 
 GIT
   remote: git://github.com/hmans/schreihals.git
-  revision: edca4d29d94f625789d3c9b767e8bc951d8ca206
+  revision: d0089fbe3621b3330ee49b8345acdad41da9693d
   specs:
-    schreihals (0.0.3)
+    schreihals (0.0.4)
       activesupport (~> 3.2.0)
       bson_ext (~> 1.5)
+      chronic
       coderay
       haml
       i18n
@@ -23,7 +24,7 @@ GIT
       rake
       redcarpet
       sass
-      schnitzelstyle (~> 0.0.2)
+      schnitzelstyle (~> 0.0.4)
       sinatra (~> 1.3.2)
       thor
       tilt (~> 1.3.0)
@@ -43,6 +44,7 @@ GEM
     bson_ext (1.5.2)
       bson (= 1.5.2)
     builder (3.0.0)
+    chronic (0.6.7)
     coderay (1.0.5)
     faraday (0.7.6)
       addressable (~> 2.2)
@@ -65,7 +67,7 @@ GEM
       activemodel (~> 3.1)
       mongo (~> 1.3)
       tzinfo (~> 0.3.22)
-    multi_json (1.0.4)
+    multi_json (1.1.0)
     multipart-post (1.1.5)
     omniauth (1.0.2)
       hashie (~> 1.2)
