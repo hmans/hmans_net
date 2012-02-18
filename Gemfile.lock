@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/hmans/schreihals.git
-  revision: d0089fbe3621b3330ee49b8345acdad41da9693d
+  revision: 18a75b90d7780ed676c276470179c0c2b46f50db
   specs:
     schreihals (0.0.4)
       activesupport (~> 3.2.0)
@@ -39,7 +39,7 @@ GEM
     activesupport (3.2.1)
       i18n (~> 0.6)
       multi_json (~> 1.0)
-    addressable (2.2.6)
+    addressable (2.2.7)
     bson (1.5.2)
     bson_ext (1.5.2)
       bson (= 1.5.2)
