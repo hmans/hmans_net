@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/teamschnitzel/schnitzelpress.git
-  revision: dee8496da146fdf46914425201c9a54612acb29c
+  revision: 01cfd94cc7a4a9f8fb525cb72ccbbcb5677e4993
   specs:
     schnitzelpress (0.0.5)
       activesupport (~> 3.2.0)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: git://github.com/teamschnitzel/schnitzelstyle.git
-  revision: 0329208779005157dda707c10f44b5ee7a280f38
+  revision: 208b635eb339a3c0df296c9c4da5a583bf9d9ec8
   specs:
     schnitzelstyle (0.0.4)
       sass
