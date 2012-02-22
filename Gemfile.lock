@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/teamschnitzel/schnitzelpress.git
-  revision: 3d4cfbb72407963bbfc52ab31f1a165c9b25e203
+  revision: 7e352d98ad8d0d4ebebdf2ebd5e1fdcfa1e91765
   specs:
     schnitzelpress (0.0.7)
       activesupport (~> 3.2.0)
@@ -41,9 +41,9 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     addressable (2.2.7)
-    bson (1.6.0)
-    bson_ext (1.6.0)
-      bson (= 1.6.0)
+    bson (1.5.2)
+    bson_ext (1.5.2)
+      bson (= 1.5.2)
     builder (3.0.0)
     chronic (0.6.7)
     coderay (1.0.5)
@@ -62,8 +62,8 @@ GEM
     launchy (2.0.5)
       addressable (~> 2.2.6)
     mime-types (1.17.2)
-    mongo (1.6.0)
-      bson (= 1.6.0)
+    mongo (1.5.2)
+      bson (= 1.5.2)
     mongoid (2.4.4)
       activemodel (~> 3.1)
       mongo (~> 1.3)
