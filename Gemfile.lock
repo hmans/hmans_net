@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git://github.com/teamschnitzel/schnitzelstyle.git
-  revision: 927b784adee9c0b3da49caf77caa6a31949b0348
+  revision: 04c72eb044cf152d29ad0f67fca08e39a39c9123
   specs:
     schnitzelstyle (0.0.8)
       sass
