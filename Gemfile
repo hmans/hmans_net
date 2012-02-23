@@ -7,6 +7,10 @@ group :development do
   gem 'heroku'
 end
 
+group :production do
+  gem 'unicorn'
+end
+
 if ENV['DEV']
   # for local development:
   gem 'schnitzelstyle', :path => '../schnitzelstyle'
