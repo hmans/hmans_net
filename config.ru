@@ -1,5 +1,4 @@
 $stdout.sync = true
-
 require File.expand_path("../app.rb", __FILE__)
 require 'rack/rewrite'
 
@@ -13,5 +12,5 @@ use Rack::Rewrite do
   end
 end
 
-
-run App
+use Rack::Cache
+run App.with_local_files
