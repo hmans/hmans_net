@@ -12,5 +12,10 @@ use Rack::Rewrite do
   end
 end
 
-use Rack::Cache
+use Rack::Cache, {
+  :verbose     => true,
+  :metastore   => URI.encode("file:/tmp/cache/meta"),
+  :entitystore => URI.encode("file:/tmp/cache/body")
+}
+
 run App.with_local_files
