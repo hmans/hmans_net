@@ -20,7 +20,10 @@ class App < SchnitzelPress::App
     set :gauges_id, "4f0570ea613f5d5351000001"
     set :twitter_id, 'hmans'
     set :read_more, "Kompletten Artikel lesen"
-    set :administrator, "browser_id:hendrik@mans.de"
+    set :administrator, {
+      :provider => "browser_id",
+      :uid => "hendrik@mans.de"
+    }
     set :feed_url, 'http://feeds.feedburner.com/hmans_de'
   end
 

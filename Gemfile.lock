@@ -1,38 +1,3 @@
-GIT
-  remote: git://github.com/hmans/schnitzelpress.git
-  revision: eff81635cedb44ce52a9ed3d5d1a3d4a8ac01a44
-  specs:
-    schnitzelpress (0.0.13)
-      activesupport (~> 3.2.0)
-      bson_ext (~> 1.5.0)
-      chronic (~> 0.6.7)
-      coderay (~> 1.0.5)
-      haml (~> 3.1.4)
-      i18n (~> 0.6.0)
-      mongo (~> 1.5.2)
-      mongoid (~> 2.4.0)
-      omniauth (~> 1.0.2)
-      omniauth-browserid (~> 0.0.1)
-      rack (~> 1.4.1)
-      rack-cache (~> 1.1.0)
-      rack-contrib (~> 1.1.0)
-      rake (~> 0.9.2.2)
-      redcarpet (~> 2.1.0)
-      ruby-oembed (~> 0.8.5)
-      sass (~> 3.1.15)
-      schnitzelstyle (~> 0.0.10)
-      sinatra (~> 1.3.2)
-      thor (~> 0.14.6)
-      tilt (~> 1.3.0)
-      wirble (~> 0.1.3)
-
-GIT
-  remote: git://github.com/hmans/schnitzelstyle.git
-  revision: 5e7e7b915cea5549b492c4037aa70eaee363c778
-  specs:
-    schnitzelstyle (0.0.10)
-      sass
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -64,6 +29,7 @@ GEM
     kgio (2.7.2)
     launchy (2.0.5)
       addressable (~> 2.2.6)
+    method_source (0.7.0)
     mime-types (1.17.2)
     mongo (1.5.2)
       bson (= 1.5.2)
@@ -80,6 +46,10 @@ GEM
       faraday
       multi_json
       omniauth (~> 1.0)
+    pry (0.9.8.2)
+      coderay (~> 1.0.5)
+      method_source (~> 0.7)
+      slop (>= 2.4.4, < 3)
     rack (1.4.1)
     rack-cache (1.1)
       rack (>= 0.4)
@@ -96,12 +66,37 @@ GEM
     ruby-oembed (0.8.5)
     rubyzip (0.9.6.1)
     sass (3.1.15)
+    schnitzelpress (0.1.0)
+      activesupport (~> 3.2.0)
+      bson_ext (~> 1.5.0)
+      chronic (~> 0.6.7)
+      coderay (~> 1.0.5)
+      haml (~> 3.1.4)
+      i18n (~> 0.6.0)
+      mongo (~> 1.5.2)
+      mongoid (~> 2.4.0)
+      omniauth (~> 1.0.2)
+      omniauth-browserid (~> 0.0.1)
+      pry (~> 0.9.8)
+      rack (~> 1.4.1)
+      rack-contrib (~> 1.1.0)
+      rake (~> 0.9.2.2)
+      redcarpet (~> 2.1.0)
+      ruby-oembed (~> 0.8.5)
+      sass (~> 3.1.15)
+      schnitzelstyle (~> 0.1.0)
+      sinatra (~> 1.3.2)
+      thor (~> 0.14.6)
+      tilt (~> 1.3.0)
+    schnitzelstyle (0.1.0)
+      sass
     shotgun (0.9)
       rack (>= 1.0)
     sinatra (1.3.2)
       rack (~> 1.3, >= 1.3.6)
       rack-protection (~> 1.2)
       tilt (~> 1.3, >= 1.3.3)
+    slop (2.4.4)
     term-ansicolor (1.0.7)
     thor (0.14.6)
     tilt (1.3.3)
@@ -110,15 +105,14 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    wirble (0.1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   heroku
+  rack-cache
   rack-rewrite (~> 1.2.1)
-  schnitzelpress!
-  schnitzelstyle!
+  schnitzelpress (~> 0.1.0)
   shotgun
   unicorn
