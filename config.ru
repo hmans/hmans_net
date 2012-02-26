@@ -16,7 +16,8 @@ if SchnitzelPress.env.production?
   use Rack::Cache, {
     :verbose     => true,
     :metastore   => URI.encode("file:/tmp/cache/meta"),
-    :entitystore => URI.encode("file:/tmp/cache/body")
+    :entitystore => URI.encode("file:/tmp/cache/body"),
+    :allow_revalidate => true
   }
 end
 
