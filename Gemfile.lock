@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/hmans/schnitzelpress.git
-  revision: 24386969a8fe1753ab9ab30c364cfb6884e62953
+  revision: ddfae8e9c907e0e01f36d743139fa731adfd5554
   branch: caching
   specs:
     schnitzelpress (0.2.0)
