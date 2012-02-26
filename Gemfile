@@ -17,5 +17,5 @@ if ENV['DEV']
 else
   # use development versions of our two gems.
   gem 'schnitzelstyle',  git: 'git://github.com/hmans/schnitzelstyle.git'
-  gem 'schnitzelpress',      git: 'git://github.com/hmans/schnitzelpress.git', :branch => "0-1-stable"
+  gem 'schnitzelpress',      git: 'git://github.com/hmans/schnitzelpress.git'
 end

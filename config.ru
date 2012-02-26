@@ -12,7 +12,7 @@ use Rack::Rewrite do
   end
 end
 
-if SchnitzelPress.env.production?
+if Schnitzelpress.env.production?
   use Rack::Cache, {
     :verbose     => true,
     :metastore   => URI.encode("file:/tmp/cache/meta"),
