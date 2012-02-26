@@ -17,7 +17,8 @@ if SchnitzelPress.env.production?
     :verbose     => true,
     :metastore   => URI.encode("file:/tmp/cache/meta"),
     :entitystore => URI.encode("file:/tmp/cache/body"),
-    :allow_revalidate => true
+    :allow_revalidate => true,
+    :allow_reload => true
   }
 end
 
