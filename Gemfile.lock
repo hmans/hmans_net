@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/hmans/schnitzelpress.git
-  revision: ead405d8dd99986b6536f8b8d9552a53f7b8e799
+  revision: 663cb8bea614c16d3bab58e9469b493ce1817287
+  branch: assets
   specs:
     schnitzelpress (0.2.0.dev)
       activesupport (~> 3.2.0)
@@ -13,6 +14,7 @@ GIT
       mongoid (~> 2.4.0)
       omniauth (~> 1.0.2)
       omniauth-browserid (~> 0.0.1)
+      packr (~> 3.1.1)
       pry (~> 0.9.8)
       rack (~> 1.4.1)
       rack-contrib (~> 1.1.0)
@@ -80,6 +82,9 @@ GEM
       faraday
       multi_json
       omniauth (~> 1.0)
+    oyster (0.9.5)
+    packr (3.1.1)
+      oyster (>= 0.9.5)
     pry (0.9.8.2)
       coderay (~> 1.0.5)
       method_source (~> 0.7)
