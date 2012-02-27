@@ -13,11 +13,11 @@ use Rack::Rewrite do
 end
 
 if Schnitzelpress.env.production?
-  # use Rack::Cache, {
-  #   :verbose     => true,
-  #   :metastore   => URI.encode("file:/tmp/cache/meta"),
-  #   :entitystore => URI.encode("file:/tmp/cache/body")
-  # }
+  use Rack::Cache, {
+    :verbose     => true,
+    :metastore   => URI.encode("file:/tmp/cache/meta"),
+    :entitystore => URI.encode("file:/tmp/cache/body")
+  }
 end
 
 run App.with_local_files
