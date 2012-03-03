@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rack-rewrite', '~> 1.2.1'
-gem 'rack-cache'
+gem 'rack-rewrite', '~> 1.2.1', :require => 'rack/rewrite'
 gem 'unicorn'
 # gem 'schnitzelpress', '~> 0.1.0'
 
@@ -17,5 +16,5 @@ if ENV['DEV']
 else
   # use development versions of our two gems.
   gem 'schnitzelstyle',  git: 'git://github.com/hmans/schnitzelstyle.git'
-  gem 'schnitzelpress',      git: 'git://github.com/hmans/schnitzelpress.git', :branch => 'assets'
+  gem 'schnitzelpress',      git: 'git://github.com/hmans/schnitzelpress.git'
 end

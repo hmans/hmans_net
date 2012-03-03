@@ -1,0 +1,4 @@
+development:
+  uri: "mongodb://localhost/hmans_net"
+production:
+  uri: <%= ENV['MONGOLAB_URI'] || ENV['MONGOHQ_URL'] || ENV['MONGO_URL'] %>

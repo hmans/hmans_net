@@ -1,23 +1,23 @@
-$stdout.sync = true
-require File.expand_path("../app.rb", __FILE__)
-require 'rack/rewrite'
+# encoding: UTF-8
+require 'rubygems'
+require 'bundler'
+Bundler.require
 
-# Enforce canonical hendrik.mans.de URL
-#
+$stdout.sync = true
+
 use Rack::Rewrite do
-  if ENV['RACK_ENV'] == 'production'
+  # Enforce canonical hendrik.mans.de URL
+  #
+  if Schnitzelpress.env.production?
     r301 %r{.*}, 'http://hendrik.mans.de$&', :if => Proc.new { |env|
       env['SERVER_NAME'] != 'hendrik.mans.de'
     }
   end
+
+  # Redirect deprecated feed URLs
+  #
+  r301 '/rss', '/feed'
+  r301 '/atom.xml', '/feed'
 end
 
-if Schnitzelpress.env.production?
-  use Rack::Cache, {
-    :verbose     => true,
-    :metastore   => URI.encode("file:/tmp/cache/meta"),
-    :entitystore => URI.encode("file:/tmp/cache/body")
-  }
-end
-
-run App.with_local_files
+run Schnitzelpress.omnomnom!
